@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
 
@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body ng-app='main'>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -54,10 +54,10 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="post.html">Post</a>
                     </li>
                     <li>
-                        <a href="post.html">Post</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -85,12 +85,36 @@
         </div>
     </header>
     
+    
+    <!--Search Bar-->
+    <!--<div class = "searchBar">
+        <a href="#/innerSearch">Inner Search</a>
+        <a href="#/googleSearch">Google Search</a>
+        <div ng-view></div>
+         
 
+    <div>
+    -->
     <!-- Main Content -->
 
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <!--<a href="post.html">-->
+                        <h2 class="post-title">
+                            <a href="#/innerSearch">Inner Search</a>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="#/googleSearch">Google Search</a>
+                        </h2>
+                        <h3>
+                            <div ng-view></div>
+                        </h3>
+                    </a>
+                    
+                </div>
+                <hr>
+
                 <div class="post-preview">
                     <!--<a href="post.html">-->
                         <h2 class="post-title">
@@ -103,15 +127,11 @@
                     <p class="post-meta">Posted by Eric on September 24, 2014</p>
                 </div>
                 <hr>
+
                 
+
                 
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
-            </div>
+
         </div>
     </div>
 
@@ -157,13 +177,17 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
 
+    <!--angularJS-->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    <script src="js/ng/search.js"></script>
 </body>
 
 </html>
